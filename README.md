@@ -52,15 +52,18 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt
    # Load the Whisper model
    model = whisper.load_model("base")
    ```
-4. Change it to anything you like based on the below table (Warning: Higher models require a moderately powerful GPU or CPU else it will take forever to load)
+4. Change it to anything you like based on the below table (The .en models are english only)
 
-| SIze | Parameters | English-only model | Multilingual Model  | Requied VRAM | 
-| ------| | ------------------- | ------------------------------ | ----------------------------- | ------------------------ |
-| tiny |  39 M            |  tiny.en                      | tiny                           | ~ 1 GB                |
-| base | 	74 M  |	base.en  |  base | ~1 GB |  ~16x | 
-| small |	244 M |	small.en |	small |	~2 GB |	~6x |
-| medium |	769 M |	medium.en |	medium |	~5 GB |	~2x |
-| large  |	1550 M  | N/A  | large | ~10 GB  | 1x |
+**Warning: Higher models require a moderately powerful GPU or CPU else it will take forever to load**
+
+|  Size  | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
+|:------:|:----------:|:------------------:|:------------------:|:-------------:|:--------------:|
+|  tiny  |    39 M    |     `tiny.en`      |       `tiny`       |     ~1 GB     |      ~32x      |
+|  base  |    74 M    |     `base.en`      |       `base`       |     ~1 GB     |      ~16x      |
+| small  |   244 M    |     `small.en`     |      `small`       |     ~2 GB     |      ~6x       |
+| medium |   769 M    |    `medium.en`     |      `medium`      |     ~5 GB     |      ~2x       |
+| large  |   1550 M   |        N/A         |      `large`       |    ~10 GB     |       1x       |
+
 
 5. For example if you want to run the medium model your code should look like this.
    ```
