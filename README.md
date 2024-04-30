@@ -54,7 +54,7 @@ docker run -d --name=audio2txt -p 5000:5000 audio2txt
    ```
 4. Change it to anything you like based on the below table (The .en models are english only)
 
-**Warning: Higher models require a moderately powerful GPU or CPU else it will take forever to load**
+**Warning: Higher models require a moderately powerful CPU else it will take forever to load**
 
 |  Size  | Parameters | English-only model | Multilingual model | Required VRAM | Relative speed |
 |:------:|:----------:|:------------------:|:------------------:|:-------------:|:--------------:|
