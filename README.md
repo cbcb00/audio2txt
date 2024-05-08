@@ -1,5 +1,6 @@
 ## This project implements the Whisper AI models in an easily accessible and simple to use containerized Web App.
-## No need to mess with config files and pip dependencies, everything comes packages in a single docker container ready to be used. 
+
+**No need to mess with config files and pip dependencies, everything comes packages in a single docker container ready to be used.**
 
 ## Check out the project on Docker Hub - [Docker Hub](https://hub.docker.com/repository/docker/cbcb00/audio2txt/general)
 
